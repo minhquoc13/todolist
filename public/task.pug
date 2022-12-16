@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap' rel='stylesheet')
+        link(rel="stylesheet", href="app.css")
+        title Edit Task
+    body 
+        .edit.container.edit-container
+            h2.global-heading.edit-heading Edit Task
+            form(method="POST").edit-form
+                .form-control
+                    label.edit-label-id TaskId
+                    p.edit-taskId
+                .form-control
+                    label.edit-label-name(for="name") Name
+                    input.input.edit-task-name(name="name" type="text")  
+                .form-control
+                    label.edit-label(for="completed") Completed
+                    input.edit-task-completed(name="completed" type="checkbox")
+                button.btn.edit-button(type="submit") Edit
+                .form-alert
+        .link
+            a.link-home.btn(href="index.html") Back to home
+        
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js' integrity='sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==' crossorigin='anonymous' referrerpolicy='no-referrer')
+        script(src="edit-task.js")

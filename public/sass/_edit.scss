@@ -1,0 +1,31 @@
+.edit {
+    margin-top: 100px;
+    
+    &-form {
+
+        .form-control {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            align-items: center;
+            justify-items: start;
+            margin-bottom: 15px;
+        }
+    }
+
+    &-button {
+        width: 100%!important;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+}
+
+.link {
+    display: block;
+    margin: 100px auto 0;
+    text-align: center;
+
+    &-home {
+        text-decoration: none;
+        background: black!important;
+    }
+}

@@ -1,0 +1,34 @@
+block mixins
+  include mixins
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap' rel='stylesheet')
+        link(rel="stylesheet", href="app.css")
+        title To-do list
+    body 
+        .wrapper
+            section.task
+                .container.task-container
+                    h2.global-heading.task-heading To-do list
+                    form.task-form
+                        input.input.task-input(type="text" placeholder="e.g. Reading book")
+                        button.btn.task-button Submit
+                    .form-alert
+            section.task-list
+                p.task-list-loading-text Loading...
+                .container.task-list-container
+                    .task-list
+                    //- +singleTask("Reading book")
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js' integrity='sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==' crossorigin='anonymous' referrerpolicy='no-referrer')
+        script(src="browser-app.js")
+
+
+            
+                
+                

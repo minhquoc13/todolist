@@ -1,0 +1,2 @@
+- `pug ./public/index.pug --watch`
+- `sass ./public/sass/app.scss ./public/app.css --watch`
